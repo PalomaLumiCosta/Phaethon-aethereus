@@ -1,0 +1,7 @@
+dados/*.xlsx
+dados/*.xls
+resultados/*.csv
+resultados/*.json
+__pycache__/
+*.pyc
+.venv/
