@@ -1,8 +1,8 @@
 # Projeto Phaethon aethereus — CEMAVE / ICMBio
 
 # Projeto desenvolvido por Paloma Lumi Costa- Bolsista de Apoio Cientifico GEFMAR -CEMAVE/ICMBIO
-
-##  OBS: Este é apenas o primeiro protótipo que deve ainda aperfeiçoar o layout , nome científico, e vizualização.
+# 📌 Observação
+## Este é apenas o primeiro protótipo que deve ainda aperfeiçoar o layout , nome científico, e vizualização.
 Necessita ainda de validações e formatação grafica
 
 ## Arquivos
