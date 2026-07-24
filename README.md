@@ -3,7 +3,7 @@
 # Projeto desemvolvido por Paloma Lumi Costa- Bolsista de Apoio Cientifico GEFMAR -CEMAVE/ICMBIO
 
 ## Este é apenas o primeiro protótipo que deve ainda aperfeiçoar o layout , nome científico, e vizualização....
-
+## Necessita ainda de validações e formatação grafica
 ## Arquivos
 - `tratamento_phaethon.py`: leitura, limpeza, validação e tabelas derivadas.
 - `PhaethonAnalise.py`: fluxo automático que gera CSVs em `resultados/`.
