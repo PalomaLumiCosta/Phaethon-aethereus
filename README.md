@@ -18,10 +18,12 @@ Projeto_Phaethon_Streamlit/
 ├── PhaethonAnalise.py
 ├── tratamento_phaethon.py
 ├── requirements.txt
+├── figures.zip
 ├── .gitignore
 ├── .streamlit/config.toml
 ├── dados/
 └── resultados/
+
 ```
 
 ## Instalação
