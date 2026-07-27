@@ -1,0 +1,1 @@
+Coloque nesta pasta a planilha Excel. Ela não será enviada ao GitHub por causa do .gitignore.
