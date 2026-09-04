@@ -1,0 +1,169 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\newcommand{\tododados}[1]{%
+  \todo[color=yellow!30]{Dados: #1}}
+
+\newcommand{\todoanalise}[1]{%
+  \todo[color=blue!20]{Análise: #1}}
+
+\newcommand{\todorevisao}[1]{%
+  \todo[color=green!20]{Revisão: #1}}
+
+\newcommand{\todourgente}[1]{%
+  \todo[color=red!25]{Urgente: #1}}
+% Core packages
+\usepackage{amsmath,amssymb}
+\usepackage{tikz-cd}
+\usepackage{multicol}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{referencias.bib}
+\usepackage{hyperref}
+
+% Paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1\baselineskip}
+\setlength{\emergencystretch}{1em}
+\setlength{\marginparwidth}{2.5cm}
+
+\title{DINÂMICA POPULACIONAL E FIDELIDADE AO SÍTIO DE NIDIFICAÇÃO DE
+\textit{Phaethon aethereus} (LINNAEUS, 1758) NO ARQUIPÉLAGO DE ABROLHOS,
+BRASIL\@: ANÁLISE TEMPORAL DE UM PROGRAMA DE MONITORAMENTO (2018–2024)
+}
+\author{Paloma Lumi Costa, Camila Garcia Gomes et al..... \ldots}
+%\date{\today}
+
+\begin{document}
+\maketitle
+
+\renewcommand{\abstractname}{Resumo}
+\begin{abstract}
+O Arquipélago de Abrolhos constitui um importante sítio de reprodução de \textit{Phaethon aethereus} aethereus no Atlântico Sul Ocidental. Com base em um programa de monitoramento semestral conduzido entre 2018 e 2024, descrevemos a dinâmica temporal dos ninhos ativos, as taxas de anilhamento, os padrões de retorno de adultos e o recrutamento de ninhegos nascidos na colônia. Ao longo do período, foram registrados 2.479 (ninhos ativos  ou monitorados??? ) \todourgente{REVISAR OS NUMEROS}ativos, com tendência de crescimento ao longo dos anos (de 300 em 2018 a 507 em 2024). A Ilha Santa Bárbara concentrou 61,8\% de todos os ninhos monitorados e 62,8\% dos retornos de adultos. A taxa média de fidelidade de adultos ao sítio de nidificação foi de 51,3\%, com destaque para o Setor Topo da Ilha Redonda (75\%). O tempo médio entre o primeiro anilhamento de um adulto e seu retorno para nidificação foi de 20 meses (mínimo: 5 meses); para ninhegos que retornaram como adultos reprodutores, a média foi de 47 meses (mínimo: 24 meses). Seis indivíduos adultos foram registrados retornando ao arquipélago por quatro temporadas reprodutivas consecutivas, confirmando elevada fidelidade individual. Os resultados indicam uma população em recuperação, fortemente dependente da integridade dos sítios de nidificação, com implicações diretas para o manejo e a conservação da espécie na região.
+
+
+\medskip
+\noindent\textbf{Palavras-chave:} aves marinhas; anilhamento; conservação; fidelidade ao sítio; monitoramento populacional; rabo-de-palha-de-bico-vermelho.
+\end{abstract}
+
+\section{Introdução}\todorevisao{ Atualizar e revisar com calma as referencias }
+\doublespacing
+As aves marinhas representam um dos grupos taxonômicos mais ameaçados do planeta, com aproximadamente 29\% das espécies classificadas em alguma categoria de risco de extinção segundo a União Internacional para a Conservação da Natureza \parencite{IUCN2019}. Em razão de suas histórias de vida caracterizadas por baixas taxas reprodutivas, maturidade sexual tardia, longevidade elevada e  fidelidade a sítios específicos de nidificação, as populações desse grupo respondem de forma lenta às perturbações ambientais e antrópicas, tornando o monitoramento demográfico de longo prazo uma ferramenta importante para a detecção precoce de declínios e para a avaliação da eficácia de medidas conservacionistas \parencite{xxxx}.
+As ilhas oceânicas estão entre os habitats mais críticos para a reprodução de aves marinhas no planeta. Essas formações geológicas concentram colônias de importância global \parencite{SarmentoEtAl2014}, livres de predadores terrestres e ricas em recursos marinhos próximos. No entanto, ao longo dos séculos, a introdução de espécies exóticas invasoras, em especial mamíferos como ratos e gatos domésticos, e a degradação costeira e marinha reduziram a área disponível e a qualidade dos habitats insulares para a reprodução de aves marinhas \parencite{xx}. No contexto do Atlântico Sul, o Brasil possui responsabilidade sobre a conservação da avifauna marinha, pois abriga colônias reprodutivas de expressão continental e arquipélagos como Fernando de Noronha, Atol das Rocas e Abrolhos \parencite{xxx}.
+O rabo-de-palha-de-bico-vermelho, \textit{Phaethon aethereus} Linnaeus, 1758, é uma ave marinha pelágica pertencente à família Phaethontidae, com distribuição pantropical e subtropial. A espécie nidifica em fendas rochosas, falésias e vegetação densa em ilhas oceânicas, geralmente em pares monogâmicos e com alta fidelidade tanto ao parceiro quanto ao sítio de nidificação ao longo dos anos \parencite{xxx}. Embora globalmente classificada como ``Pouco Preocupante'' (LC) pela IUCN (2019), populações regionais de \textit{P. aethereus} têm demonstrado tendências preocupantes de declínio associadas à predação por espécies invasoras, distúrbio humano e alterações oceanográficas que afetam a disponibilidade de presas pelágicas \parencite{BUSCAR ARTIGOS}. No Brasil, a espécie é classificada como Em Perigo pela Portaria MMA n.º 148/2022.
+No Brasil, \textit{P. aethereus} reproduz-se predominantemente no Arquipélago de Abrolhos, localizado no sul do estado da Bahia, sendo considerado a principal área de reprodução da espécie no Atlântico Sul Ocidental \parencite{(Nunes xx)}. O arquipélago é reconhecido internacionalmente como uma Important Bird and Biodiversity Area (IBA) e é protegido pelo Parque Nacional Marinho dos Abrolhos \parencite{(Decreto n.° 88.218/1983)}, fato que confere à área um papel estratégico na conservação da biodiversidade marinha do Atlântico Sudoeste (XXXX).
+A análise da fidelidade ao sítio de nidificação (nest-site fidelity) constitui um dos parâmetros demográficos mais informativos para a compreensão da dinâmica populacional de aves marinhas coloniais. Indivíduos altamente fiéis ao sítio favorecem a estabilidade das colônias e o recrutamento local, ao passo que baixas taxas de retorno podem sinalizar condições desfavoráveis no habitat ou mortalidade adulta elevada (xxx). O acompanhamento sistemático de indivíduos anilhados ao longo de múltiplas temporadas reprodutivas permite ainda estimar taxas de sobrevivência aparente, intervalos de recrutamento e estrutura etária da população reprodutora, parâmetros estes utilizados em  modelos de viabilidade populacional (xxx).\todoanalise{eu realizei algumas tenta}
+Apesar da relevância ecológica e conservacionista do Arquipélago de Abrolhos, estudos quantitativos sobre a dinâmica reprodutiva de \textit{P. aethereus} na região são escassos e, em sua maioria, restritos a intervalos temporais curtos (xxxx). A ausência de séries temporais compromete a avaliação de tendências populacionais e a elaboração de diagnósticos confiáveis sobre o estado de conservação da espécie no Brasil. Neste contexto, o Programa de Monitoramento Semestral de Ninhos conduzido pelo Projeto Abrolhos preenche uma lacuna, ao fornecer dados padronizados e contínuos desde 2018.
+O objetivo do presente estudo é descrever e analisar a dinâmica temporal e espacial da população reprodutora de \textit{Phaethon aethereus} no Arquipélago de Abrolhos entre 2018 e 2024, com base em registros de ninhos ativos, anilhamento e recaptura de adultos e ninhegos. Especificamente, buscamos: (i) avaliar a tendência temporal no número de ninhos ativos; (ii) quantificar as taxas de fidelidade ao sítio de nidificação por adultos e recrutas; (iii) caracterizar a distribuição espacial da atividade reprodutiva entre as ilhas e setores do arquipélago; e (iv) estimar os intervalos de retorno de indivíduos anilhados como adultos e como ninhegos, contribuindo para a compreensão do recrutamento e da longevidade reprodutiva da espécie no Atlântico Sul.
+\section{Materiais e Métodos}
+\doublespacing
+\subsection{Área de Estudo}\tododados{ INSERIR UM MAPA}
+O Arquipélago de Abrolhos (17°58'S; 39°05'W) está situado na plataforma continental do sul da Bahia, Brasil, a aproximadamente 70 km da costa, e é composto por cinco ilhas: Santa Bárbara, Redonda, Siriba, Sueste e Guarita. Com altitudes que variam de poucos metros a cerca de 30 m acima do nível do mar, as ilhas apresentam substratos rochosos, costões basálticos e manchas de vegetação arbustiva, oferecendo sítios adequados para a nidificação de \textit{P}.\textit{aethereus} em fendas e afloramentos rochosos. A área integra o Parque Nacional Marinho dos Abrolhos (PARNAM Abrolhos), criado em 1983, e é reconhecida como a região recifal mais biodiversa do Atlântico Sul.
+
+\subsection{Protocolo de Monitoramento}
+O monitoramento foi conduzido em campanhas semestrais entre 2018 e 2024 (14 campanhas no total), abrangendo os períodos de maior atividade reprodutiva da espécie no arquipélago. Em cada campanha, equipes treinadas percorreram as cinco ilhas, registrando sistematicamente todos os ninhos ativos encontrados. Um ninho foi considerado ativo quando apresentava ovo(s), ninhego(s) ou par adulto em comportamento de incubação ou cuidado parental.
+Ocasionalmente adultos capturados e ninhegos com plumagem desenvolvida foram anilhados com anilhas metálicas numeradas (CEMAVE/ICMBio). Dados de cada ninho, como localização por GPS, identificação das anilhas dos adultos presentes, estágio reprodutivo, setor e ilha, foram registrados em planilhas de campo padronizadas e posteriormente digitalizados em banco de dados. O presente estudo analisa apenas a espécie \textit{P}.\textit{aethereus} , embora o monitoramento inclua também os registros de \textit{P}.\textit{lepturus} (n = 8 ninhos no período) os quais foram excluídos por insuficiência amostral para análises populacionais robustas.
+\todoanalise{Não sei muito como analisar , uma vez que não foram  anilhados TODOS os individuos ...incluindo ASA no entanto podemos considerar acompanhamento apenas dos individuos anilhados ( calcular aqui o percentual de encontros em ninhos ativos que não foram anilhados ....), separar as temporadas primeiro e segundo semestre descrever o pico reprodutivo, onde está publicado?}
+
+\subsection{Análise de dados}\todoanalise{gostaria ainda de testar algumas analise comparando antes e epois da retirada das cabras e antes e depois da desratização.}
+A taxa de retorno ao sítio de nidificação foi calculada pela razão entre o número de indivíduos anilhados em determinada campanha e posteriormente recapturados, ao menos uma vez, na mesma área de nidificação, e o número total de indivíduos anilhados naquela campanha. Para cada indivíduo recapturado, o intervalo de retorno correspondeu ao número de meses transcorridos entre a primeira captura e a primeira recaptura registrada durante o período reprodutivo. No caso dos indivíduos anilhados como ninhegos e posteriormente recrutados para a população reprodutora, esse intervalo foi calculado entre a data do anilhamento e a data do primeiro registro como adulto reprodutor. O processamento dos dados e as análises foram realizados em Python.\todo[inline]{Confirmar a versão do Python utilizada.}
+\section{Resultados}
+\doublespacing
+\subsection{Análise temporal dos ninhos ativos}
+Entre 2018 e 2024, foram registrados 2.479 ninhos ativos de \textit{Phaethon aethereus} no Arquipélago de Abrolhos ao longo das sete temporadas reprodutivas monitoradas (Tabela~\ref{tab:monitoramento}). O número anual de ninhos ativos variou de um mínimo de 200 (2021) a um máximo de 507 (2024), revelando uma tendência geral de crescimento ao longo do período (r = 0,89; p < 0,05). Após a queda registrada em 2021, a população exibiu recuperação progressiva e consistente nos três anos seguintes, com incrementos entre 2021 e 2024. O ano de 2022 marcou o início de uma fase expansiva acelerada, com 421 ninhos ativos, valor 110,5\% superior ao mínimo registrado no ano anterior.
+
+\begin{table}[htbp]
+\centering
+\caption{Síntese dos registros de ninhos ativos, anilhamento e retorno de indivíduos de \textit{Phaethon aethereus}, por ano e por ilha, no Arquipélago de Abrolhos.}
+\label{tab:monitoramento}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+\shortstack{Período/\\localidade} &
+\shortstack{Ninhos\\ativos} &
+\shortstack{Adultos\\anilhados} &
+\shortstack{Retornos\\de adultos} &
+\shortstack{Retornos\\de ninhegos} &
+\shortstack{Retorno de\\adultos (\%)} &
+\shortstack{Retorno de\\ninhegos (\%)} \\
+\midrule
+\multicolumn{7}{l}{\textbf{Por ano}} \\
+2018 & 300 & 379 & --- & --- & ---  & --- \\
+2019 & 257 & 288 & 155 & 1 & 53,8 & --- \\
+2020 & 332 & 214 & 142 & 1 & 42,8 & --- \\
+2021 & 200 & 214 & 116 & 6 & 54,2 & 2,8 \\
+2022 & 421 & 407 & 169 & 9 & 41,5 & --- \\
+2023 & 462 & 141 & 95  & 5 & 67,4 & 3,5 \\
+2024 & 507 & 234 & 136 & 8 & 58,1 & --- \\
+\addlinespace
+\multicolumn{7}{l}{\textbf{Por ilha}} \\
+Guarita        & 2   & 2   & 0   & 0  & 0,0  & 0,0 \\
+Redonda        & 157 & 232 & 68  & 3  & 29,3 & 1,3 \\
+Santa Bárbara  & 613 & 807 & 263 & 20 & 32,6 & 2,5 \\
+Siriba         & 54  & 164 & 66  & 0  & 40,2 & 0,0 \\
+Sueste         & 85  & 99  & 30  & 1  & 30,3 & 1,0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Distribuição espacial}
+A Ilha Santa Bárbara concentrou a maior densidade reprodutiva do arquipélago, com 613 ninhos ativos registrados no período (61,8\% do total acumulado por ilha), seguida pela Ilha Redonda (157 ninhos; 15,8\%) e pela Ilha Sueste (85 ninhos; 8,6\%). A Ilha Guarita apresentou atividade reprodutiva pouco significativa, com apenas dois ninhos registrados em todo o período.
+Em Santa Bárbara, o Setor Mato Verde foi o que apresentou o maior número de ninhos monitorados (244 ninhos; Tabela 1) e o maior volume de adultos anilhados (403 indivíduos), confirmando sua posição como o núcleo reprodutivo da colônia. O Setor Lado Norte apresentou o maior número absoluto de recrutamento de ninhegos que retornaram como adultos para nidificar (n = 11), e o Setor Topo registrou a maior taxa proporcional de retorno de adultos (75\%), ainda que com um número menor de indivíduos monitorados (n = 58 ninhos; 17 anilhamentos).
+Na análise por ilha, a Ilha Siriba destacou-se pela mais elevada taxa de retorno de adultos entre as ilhas com amostras representativas (40,2\%), mesmo com número de ninhos ativos consideravelmente inferior ao de Santa Bárbara. A Ilha Redonda e a Ilha Sueste apresentaram taxas de retorno similares (29,3\% e 30,3\%, respectivamente), enquanto a Ilha Santa Bárbara, apesar de seu volume absoluto dominante, exibiu taxa de retorno de adultos de 32,6\%.
+
+\subsection{Fidelidade ao ninho}
+Ao longo do período monitorado, 413 adultos de P. aethereus retornaram ao arquipélago para nidificar em pelo menos uma campanha após o anilhamento inicial (Tabela~\ref{tab:frequencia-retornos}). Destes, 279 indivíduos (67,5\%) retornaram em apenas uma oportunidade, 100 (24,2\%) retornaram duas vezes, 28 (6,8\%) retornaram três vezes e seis indivíduos (1,5\%) foram registrados retornando por quatro campanhas distintas, demonstrando elevada fidelidade individual ao longo dos seis anos de estudo.
+Para ninhegos que retornaram ao arquipélago já como adultos reprodutores, foram registrados quatro eventos de recrutamento confirmado (três indivíduos retornando uma vez e um retornando duas vezes). O tempo mínimo de retorno de adultos anilhados foi de cinco meses, com média de 20 meses entre o primeiro anilhamento e o primeiro retorno registrado. Para ninhegos recrutados, o tempo mínimo até o retorno como adulto reprodutor foi de 24 meses, com média de 47 meses.
+
+\begin{table}[htbp]
+\centering
+\caption{Frequência de retornos de adultos e de ninhegos recrutados de \textit{Phaethon aethereus} no Arquipélago de Abrolhos.}
+\label{tab:frequencia-retornos}
+\begin{tabular}{lrrr}
+\toprule
+\shortstack{Número de\\retornos} &
+\shortstack{Adultos\\($n$)} &
+\shortstack{Ninhegos recrutados\\($n$)} &
+\shortstack{Total de\\retornantes (\%)} \\
+\midrule
+$1\times$ & 279 & 3 & 67,2 \\
+$2\times$ & 100 & 0 & 24,1 \\
+$3\times$ & 28  & 1 & 6,7 \\
+$4\times$ & 6   & 0 & 1,4 \\
+\midrule
+Total     & 413 & 4 & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\tododados{Revisar os percentuais da Tabela~\ref{tab:frequencia-retornos}: as quatro categorias informadas somam 99,4\%, enquanto o total indicado é 100\%.}
+
+\section{Discussão}
+\subsection{Tendência populacional }
+A tendência de crescimento no número de ninhos ativos de \textit{Phaethon aethereus} no Arquipélago de Abrolhos entre 2018 e 2024 é um resultado positivo considerando as medidas e ações efetivas de plano de  manejo e proteção de habitat a qual a unidade de conservação implementa. O incremento de 69\% no número de ninhos ao longo de seis anos, com pico de 507 ninhos em 2024, posiciona o arquipélago como um sítio reprodutivo de importância crescente para a espécie no Atlântico Sul.
+A queda observada em 2021 (200 ninhos; o menor valor da série). Perturbações pontuais no ciclo reprodutivo de aves marinhas tropicais são frequentemente associadas a eventos climáticos extremos, como episódios de El Niño,  que afetam negativamente a disponibilidade de presas pelágicas e, consequentemente, a condição corporal dos adultos reprodutores e a taxa de incubação ( xx). Alternativamente, anos com menor esforço amostral ou com campanhas realizadas fora do pico reprodutivo da espécie podem subestimar o número real de ninhos ativos. No caso pode estar associado especificamente a ausência de esforço durante a pandemia de Covid com a retomada a partir de 2022, com aumento de ninhos ativos em 2024. 
+Em perspectiva comparada, populações de P. aethereus em ilhas do Atlântico Leste , como nas Ilhas de Cabo Verde, têm demonstrado trajetórias opostas, com declínios acentuados associados à predação por gatos ferais e à perturbação humana (Semedo et al 2020). No Caribe, onde a espécie também é monitorada, colônias em ilhas protegidas apresentam estabilidade ou crescimento moderado, enquanto colônias expostas à perturbação antrópica e à predação declinam( Wells et al 2022). O padrão verificado em Abrolhos, portanto, reforça a hipótese de que a proteção efetiva do território insular, incluindo o controle de espécies exóticas invasoras e a regulação do acesso humano,  é condição fundamental para a manutenção e recuperação de colônias tropicais de \textit{P. aethereus.}
+\tododados{A incorporação dos dados de 2025/2026 permitirá avaliar se a tendência de crescimento se mantém e se o nível de 507 ninhos em 2024 representa uma estabilização ou o início de uma fase de maior saturação dos sítios de nidificação disponíveis na área.}]
+
+\subsection{Analise Espacial} 
+A predominância de Santa Bárbara como hotspot reprodutivo com 61,8\% dos ninhos e 62,8\% dos retornos de adultos,   com sua posição como a maior ilha do arquipélago e com a maior extensão de substratos rochosos disponíveis para nidificação em fendas e encostas protegidas. Em espécies coloniais de aves marinhas, o tamanho da ilha e a heterogeneidade do relevo são preditores robustos da capacidade de suporte reprodutivo (xxx). O Setor Mato Verde, dentro de Santa Bárbara, apresenta vegetação arbustiva de porte médio que oferece sombreamento e proteção contra predadores aéreos, 
+A concentração de grande parte da atividade reprodutiva em um único setor (Mato Verde) configura, ao mesmo tempo, um ponto de força e um ponto de vulnerabilidade para a gestão da espécie. Eventos estocásticos como tempestades, ressacas ou surtos epidêmicos concentrados nessa área poderiam comprometer desproporcionalmente a produtividade da colônia.  \todorevisao{ainda tenho que aprofundar a discussão sobre esta regiao não estar incluida na area do parque mas ser a mais importante para as aves}
+
+\subsection{Análise de Fidelidade}
+A taxa média de retorno de adultos de 51,3\% calculada para o período 2018–2024 é compatível com os valores reportados para outras populações de Phaethontidae monitoradas por marcação individual. \todorevisao{Trabalhos com taxa de retorno de Phaethon...}
+A diferença expressiva nas taxas de retorno entre setores, com o Setor Topo atingindo 75\% e setores como Parte Baixa registrando taxas inferiores, sugere heterogeneidade entre os sítios na qualidade do habitat reprodutivo. Sítios com maior fidelidade tendem a oferecer recursos como proteção contra predadores, microclima favorável e densidade de parceiros potenciais, todos fatores que aumentam a probabilidade de sucesso reprodutivo e, portanto, incentivam o retorno ao mesmo local (xxxx). 
+A fidelidade aos ninhos da Ilha Siriba (40,2\% de retorno de adultos), mesmo com menor número absoluto de ninhos, é particularmente relevante. (xxxx). 
+Os seis indivíduos que retornaram por quatro campanhas consecutivas merecem destaque por representarem o subgrupo de maior longevidade reprodutiva documentada na colônia. Em aves marinhas de longa vida como P. aethereus, a fidelidade repetida ao mesmo sítio ao longo de múltiplas temporadas é esperada em indivíduos de alta qualidade genotípica e fenotípica (???). Esse subgrupo de indivíduos fiéis e recorrentes é frequentemente o mais importante para a estabilidade da colônia e para a transmissão de informação social sobre a qualidade do sítio para indivíduos mais jovens ().
+O tempo médio de 47 meses entre o anilhamento de um ninhego e seu primeiro retorno ao arquipélago como adulto reprodutor é consistente com o período de maturação sexual descrito para a família Phaethontidae. P. aethereus alcança a maturidade sexual entre os três e cinco anos de vida  \parencite{OrtaEtAl2019}, com o início da atividade reprodutiva geralmente precedido por um período de prospecção de sítios, o chamado "prospecting behavior",  no qual jovens não reprodutores visitam colônias sem necessariamente se instalar.
+O retorno mínimo documentado de 24 meses para um ninhego recrutar como adulto sugere que alguns indivíduos podem iniciar a reprodução em idade precoce, possivelmente em anos de alta qualidade ambiental e maior disponibilidade de sítios de nidificação. 
+
+
+
+
+\section{Conclusao}
+\section{Bibliografia}
+
+\printbibliography
+\end{document}
